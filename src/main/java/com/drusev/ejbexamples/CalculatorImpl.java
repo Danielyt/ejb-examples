@@ -9,7 +9,8 @@ import javax.ejb.Stateless;
  * @author Drusev
  *
  */
-@Stateless
+@Stateless // if the annotation is missing NoSuchEjbException is thrown when
+			// lociting the ejb
 public class CalculatorImpl implements Calculator {
 
 	@Override
